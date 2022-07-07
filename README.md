@@ -1,8 +1,8 @@
-# Web3 Boilerplate
+# Smart contract Lottery
 
-This boilerplate is made of Hardhat for smart contract development. The front-end is made of NEXT.JS, Tailwind, and ethers.js.
+Using Solidity, Chainlink VRF and Keepers. 
 
-Contract deployed to: ```0x0F3030123D5A2597ef0c356248954fC237645AB7```
+Contract deployed to: ```0x96040feB1A8400906E4C86Bc0795eDd8592D3622```
 
 To use this template, follow these steps:
 
