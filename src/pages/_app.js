@@ -1,16 +1,15 @@
-import '../styles/globals.css'
-import { Web3ReactProvider } from '@web3-react/core'
-import { Web3Provider } from "@ethersproject/providers";
-
-const getLibrary = (provider) => {
-  return new Web3Provider(provider);
-}
-
+import "../styles/globals.css";
+import { MoralisProvider } from "react-moralis";
+import { NotificationProvider } from "web3uikit";
 
 function MyApp({ Component, pageProps }) {
-  return <Web3ReactProvider getLibrary={getLibrary}>
-     <Component {...pageProps} />
-     </Web3ReactProvider>
+  return (
+    <MoralisProvider initializeOnMount={false}>
+      <NotificationProvider>
+        <Component {...pageProps} />
+      </NotificationProvider>
+    </MoralisProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;
